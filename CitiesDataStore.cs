@@ -40,15 +40,15 @@ namespace CityInfo.API
                     {
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 1
+                            Name = "some City", Description = "City of the gods", Id = 4
                         },
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 2
+                            Name = "some City", Description = "City of the gods", Id = 5
                         },
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 3
+                            Name = "some City", Description = "City of the gods", Id = 6
                         }
                     }
                 },
@@ -58,15 +58,15 @@ namespace CityInfo.API
                     {
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 1
+                            Name = "some City", Description = "City of the gods", Id = 7
                         },
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 2
+                            Name = "some City", Description = "City of the gods", Id = 8
                         },
                         new PointsOfInterestsDto
                         {
-                            Name = "some City", Description = "City of the gods", Id = 3
+                            Name = "some City", Description = "City of the gods", Id = 9
                         }
                     }
                 }
