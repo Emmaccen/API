@@ -43,13 +43,13 @@ namespace CityInfo.API.Controllers
             if (city == null)
                 return NotFound();
 
-            var maxCityId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterests)
+            var maxPoiId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterests)
                 .Max(id => id.Id);
 
             var finalResult = new PointsOfInterestsDto()
             { 
                 Name = poi.Name, 
-                Id = ++maxCityId, 
+                Id = ++maxPoiId, 
                 Description = poi.Description 
             };
 
