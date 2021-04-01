@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CityInfo.API.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -40,7 +41,7 @@ namespace CityInfo.API.Controllers
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-            if(poi.Name == poi.Description)
+            if (poi.Name == poi.Description)
             {
                 ModelState.AddModelError("Description", "Name and Description cannot be the same");
             }
@@ -50,25 +51,25 @@ namespace CityInfo.API.Controllers
             }
 
             //you can use the below, if you're not doing the checks yourself
-           /* if (city == null)
-                return NotFound();*/
+            /* if (city == null)
+                 return NotFound();*/
 
             var maxPoiId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterests)
                 .Max(id => id.Id);
 
             var finalResult = new PointsOfInterestsDto()
-            { 
-                Name = poi.Name, 
-                Id = ++maxPoiId, 
-                Description = poi.Description 
+            {
+                Name = poi.Name,
+                Id = ++maxPoiId,
+                Description = poi.Description
             };
 
             city.PointsOfInterests.Add(finalResult);
             return CreatedAtRoute("CreatedPointOfInterest",
                 new
                 {
-                   cityId,
-                   finalResult.Id
+                    cityId,
+                    finalResult.Id
                 },
                 finalResult
                 );
@@ -80,7 +81,7 @@ namespace CityInfo.API.Controllers
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-            if(city == null)
+            if (city == null)
                 return NotFound();
 
             var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
@@ -94,8 +95,9 @@ namespace CityInfo.API.Controllers
             return NoContent();
         }
 
-        [HttpPatch(Name = "updatedPointOfInterest")]
-        public IActionResult UpdatePointOfInterest(int poiId, int cityId, [FromBody] PointsOfInterestForUpdateDto poiUpdate)
+        [HttpPatch("{poiId}")]
+        public IActionResult UpdatePointOfInterest(int poiId, int cityId, 
+            [FromBody] JsonPatchDocument<PointsOfInterestForUpdateDto> poiUpdate)
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
@@ -107,14 +109,36 @@ namespace CityInfo.API.Controllers
             if (poiFromStore == null)
                 return NotFound();
 
-            var update = new PointsOfInterestsDto
+            var poiToPatch = new PointsOfInterestForUpdateDto
             {
-                Name = poiUpdate.Name,
-                Description = poiUpdate.Description,
-                Id = poiFromStore.Id
+                Name = poiFromStore.Name,
+                Description = poiFromStore.Description,
             };
-            return CreatedAtRoute("updatedPointOfInterest",
-               new { }, update);
+
+            poiUpdate.ApplyTo(poiToPatch, ModelState);
+
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            /* Now in a case where someone send a request like
+             * [{
+                "op" : "remove",
+                "path": "/name",
+                },]
+            This kind of request will succeed because the input is a "JsonPatchDocument"
+            * which is a valid request, but... then our Name field is requered and should
+            * not be removeable so, after checking ModelState, which would be valid
+            * cuz our JsonPatchDocument is a valid request, we also wanna chech the poiToPatch
+            * variable to make sure everything checks out fine
+            */
+
+            if (!TryValidateModel(poiToPatch))
+                return BadRequest();
+
+            poiFromStore.Name = poiToPatch.Name;
+            poiFromStore.Description = poiToPatch.Description;
+
+            return NoContent();
         }
     }
 }
