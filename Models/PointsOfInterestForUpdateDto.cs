@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityInfo.API.Models
 {
-    public class PointsOfInterestForCreation
+    public class PointsOfInterestForUpdateDto
     {
         [Required(ErrorMessage = "You must should provide a name bruv!")]
         public string Name { get; set; }

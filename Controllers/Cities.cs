@@ -21,6 +21,7 @@ namespace CityInfo.API.Controllers
         public IActionResult GetCity(int id)
         {
             var result = CitiesDataStore.Current.Cities.FirstOrDefault(uniqueId => uniqueId.Id == id);
+
             if (result == null)
                 return NotFound();
             else

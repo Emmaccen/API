@@ -40,8 +40,18 @@ namespace CityInfo.API.Controllers
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-            if (city == null)
-                return NotFound();
+            if(poi.Name == poi.Description)
+            {
+                ModelState.AddModelError("Description", "Name and Description cannot be the same");
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            //you can use the below, if you're not doing the checks yourself
+           /* if (city == null)
+                return NotFound();*/
 
             var maxPoiId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterests)
                 .Max(id => id.Id);
@@ -63,6 +73,48 @@ namespace CityInfo.API.Controllers
                 finalResult
                 );
 
+        }
+
+        [HttpPut("{poiId}")]
+        public IActionResult ReplacePointOfInterest(int poiId, int cityId, [FromBody] PointsOfInterestForUpdateDto poiUpdate)
+        {
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if(city == null)
+                return NotFound();
+
+            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
+
+            if (poiFromStore == null)
+                return NotFound();
+
+            poiFromStore.Name = poiUpdate.Name;
+            poiFromStore.Description = poiUpdate.Description;
+
+            return NoContent();
+        }
+
+        [HttpPatch(Name = "updatedPointOfInterest")]
+        public IActionResult UpdatePointOfInterest(int poiId, int cityId, [FromBody] PointsOfInterestForUpdateDto poiUpdate)
+        {
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if (city == null)
+                return NotFound();
+
+            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
+
+            if (poiFromStore == null)
+                return NotFound();
+
+            var update = new PointsOfInterestsDto
+            {
+                Name = poiUpdate.Name,
+                Description = poiUpdate.Description,
+                Id = poiFromStore.Id
+            };
+            return CreatedAtRoute("updatedPointOfInterest",
+               new { }, update);
         }
     }
 }
