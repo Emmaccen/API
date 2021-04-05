@@ -127,7 +127,7 @@ namespace CityInfo.API.Controllers
                 },]
             This kind of request will succeed because the input is a "JsonPatchDocument"
             * which is a valid request, but... then our Name field is requered and should
-            * not be removeable so, after checking ModelState, which would be valid
+            * not be removeable/nullable so, after checking ModelState, which would be valid
             * cuz our JsonPatchDocument is a valid request, we also wanna chech the poiToPatch
             * variable to make sure everything checks out fine
             */
@@ -137,6 +137,24 @@ namespace CityInfo.API.Controllers
 
             poiFromStore.Name = poiToPatch.Name;
             poiFromStore.Description = poiToPatch.Description;
+
+            return NoContent();
+        }
+
+        [HttpDelete("{poiId}")]
+        public IActionResult DeletePointOfInterest(int cityId, int poiId)
+        {
+            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if (city == null)
+                return NotFound();
+
+            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
+
+            if (poiFromStore == null)
+                return NotFound();
+
+            city.PointsOfInterests.Remove(poiFromStore);
 
             return NoContent();
         }
