@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CityInfo.API.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,12 +15,33 @@ namespace CityInfo.API.Controllers
     [Route("Api/cities/{cityId}/[controller]")]
     public class PointsOfInterest : ControllerBase
     {
-        public IActionResult GetPointsOfInterests(int cityId, int id)
+        private readonly ILogger<PointsOfInterest> logger;
+
+        public PointsOfInterest(ILogger<PointsOfInterest> logger)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-            if (city == null)
-                return NotFound();
-            return Ok(city.PointsOfInterests);
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
+        public IActionResult GetPointsOfInterests(int cityId)
+        {
+
+            try
+            {
+                throw new Exception();
+                var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                if (city == null)
+                {
+                    logger.LogInformation($"The city with id {cityId} cannot be found");
+                    return NotFound();
+                }else
+                return Ok(city.PointsOfInterests);
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogCritical("An error occured when getting points of interest", ex);
+                return StatusCode(500, "Please try again later, your request will succeed when server is done being angry");
+            }
         }
 
         [HttpGet("{id}", Name = "CreatedPointOfInterest")]
