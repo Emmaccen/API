@@ -10,7 +10,7 @@ namespace CityInfo.API
     {
         public static CitiesDataStore Current { get; } = new CitiesDataStore();
         public List<CityDto> Cities { get; set; }
-        public PointsOfInterestsDto pointsOfInterests { get; set; }
+        public PointsOfInterestsDto PointsOfInterests { get; set; }
 
         public CitiesDataStore()
         {

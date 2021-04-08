@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -8,12 +9,15 @@ namespace CityInfo.API.Services
 {
     public class LocalMailService : IMailService
     {
-        private readonly string _MailTo = "@admin.gmail.com";
-        private readonly string _MailFrom = "@noreply.gmail.com";
+        private readonly IConfiguration appSettings;
 
+        public LocalMailService(IConfiguration appSettings)
+        {
+            this.appSettings = appSettings ?? throw new ArgumentNullException();
+        }
         public void ActivateMailService(String message, string subject)
         {
-            Debug.WriteLine($"Mail from {_MailFrom} to {_MailTo}, with local mail service");
+            Debug.WriteLine($"Mail from {appSettings["mailSettings:mailTo"]} to {appSettings["mailSettings:mailFrom"]}, with local mail service");
             Debug.WriteLine($"Mail Subject: {subject}");
             Debug.WriteLine($"Mail Message: {message}");
         }
