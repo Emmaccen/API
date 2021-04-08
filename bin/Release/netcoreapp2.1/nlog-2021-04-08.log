@@ -1,0 +1,12 @@
+2021-04-08 11:01:42.6360|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-08 11:01:44.0611|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-08 11:01:44.0611|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-08 11:01:44.1273|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.0662ms 200 
+2021-04-08 11:01:44.3930|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 334.3704ms 404 text/plain
+2021-04-08 11:01:59.8156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:50756/Api/cities/1/PointsOfInterest/3  
+2021-04-08 11:02:00.0632|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeletePointOfInterest", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointsOfInterest (CityInfo.API).
+2021-04-08 11:02:00.1552|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.PointsOfInterest.DeletePointOfInterest (CityInfo.API) - Validation state: Valid
+2021-04-08 11:02:00.1705|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.PointsOfInterest.DeletePointOfInterest (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 7.3181ms.
+2021-04-08 11:02:00.1871|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2021-04-08 11:02:00.1871|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.PointsOfInterest.DeletePointOfInterest (CityInfo.API) in 104.0938ms
+2021-04-08 11:02:00.2081|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 396.6707ms 204 

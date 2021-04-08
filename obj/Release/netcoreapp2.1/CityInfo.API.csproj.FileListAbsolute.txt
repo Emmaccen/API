@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.csprojAssemblyReference.cache
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.AssemblyInfo.cs
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.RazorAssemblyInfo.cache
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.RazorAssemblyInfo.cs
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\nlog.config
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\CityInfo.API.deps.json
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\CityInfo.API.runtimeconfig.json
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\CityInfo.API.runtimeconfig.dev.json
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\CityInfo.API.dll
+C:\Users\User\source\repos\CityInfo.API\bin\Release\netcoreapp2.1\CityInfo.API.pdb
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.RazorTargetAssemblyInfo.cache
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.dll
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.pdb
+C:\Users\User\source\repos\CityInfo.API\obj\Release\netcoreapp2.1\CityInfo.API.genruntimeconfig.cache
