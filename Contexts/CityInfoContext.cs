@@ -11,10 +11,10 @@ namespace CityInfo.API.Contexts
     {
         public DbSet<City> City { get; set; }
 
-        public DbSet<PointOfInterest> pointOfInterests { get; set; }
+        public DbSet<PointOfInterest> PointOfInterests { get; set; }
 
         public CityInfoContext(DbContextOptions<CityInfoContext> options)
-            :base()
+            :base(options)
         {
             Database.EnsureCreated();
         }

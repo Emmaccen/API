@@ -1,0 +1,36 @@
+2021-04-09 14:01:38.2935|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-09 14:01:39.2991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-09 14:01:39.2991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-09 14:01:39.4338|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 154.8217ms 200 
+2021-04-09 14:01:39.6623|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 445.6475ms 404 text/plain
+2021-04-09 14:03:41.1445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/TestingDatabaseTable  
+2021-04-09 14:03:41.2245|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Testing", controller = "TestingDatabaseTable"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Testing() on controller CityInfo.API.Controllers.TestingDatabaseTable (CityInfo.API).
+2021-04-09 14:03:56.8083|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) in 15576.9949ms
+2021-04-09 14:03:57.0111|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-04-09 14:03:57.0931|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15949.3203ms 500 text/html; charset=utf-8
+2021-04-09 14:04:19.8781|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-09 14:04:20.8941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-09 14:04:20.8941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-09 14:04:20.9460|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.114ms 200 
+2021-04-09 14:04:21.2281|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.9637ms 404 text/plain
+2021-04-09 14:05:03.7861|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/connectionString  
+2021-04-09 14:05:03.7971|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.0383ms 404 text/plain
+2021-04-09 14:05:06.7851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/connectionString  
+2021-04-09 14:05:06.7851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.536ms 404 text/plain
+2021-04-09 14:05:21.9831|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/connectionString  
+2021-04-09 14:05:21.9974|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.8841ms 404 text/plain
+2021-04-09 14:05:40.8986|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/TestingDatabaseTable  
+2021-04-09 14:05:40.9515|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Testing", controller = "TestingDatabaseTable"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Testing() on controller CityInfo.API.Controllers.TestingDatabaseTable (CityInfo.API).
+2021-04-09 14:07:00.3009|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) in 79343.8355ms
+2021-04-09 14:07:00.3631|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-04-09 14:07:00.4296|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79530.6667ms 500 text/html; charset=utf-8
+2021-04-09 14:25:58.1838|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-09 14:25:58.8350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-09 14:25:58.8350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-09 14:25:58.8749|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.6551ms 200 
+2021-04-09 14:25:59.0209|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 188.5404ms 404 text/plain
+2021-04-09 14:26:17.8421|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/testingdatabasetable  
+2021-04-09 14:26:17.8843|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Testing", controller = "TestingDatabaseTable"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Testing() on controller CityInfo.API.Controllers.TestingDatabaseTable (CityInfo.API).
+2021-04-09 14:28:08.0314|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) in 110134.771ms
+2021-04-09 14:28:08.1121|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-04-09 14:28:08.1601|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110318.9384ms 500 text/html; charset=utf-8

@@ -42,9 +42,9 @@ namespace CityInfo.API
 #else
             services.AddTransient<IMailService, CloudMailService>();
 #endif
-            string connectionString = @"Server-(localdb)\MSSQLLocalDB;Database-CityInfoDB;Trusted_connection-True;";
+            string connectionString = @"Server=(localdb)\mssqllocaldb;Database=CityInfoDB;Trusted_Connection=True;";
             services.AddDbContext<CityInfoContext>( option => {
-                option.UseSqlServer("");
+                option.UseSqlServer(connectionString);
             });
         }
 
