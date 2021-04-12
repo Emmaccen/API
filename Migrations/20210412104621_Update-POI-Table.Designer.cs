@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CityInfo.API.Migrations
 {
     [DbContext(typeof(CityInfoContext))]
-    [Migration("20210411152834_CityInfoDbInitialMigration")]
-    partial class CityInfoDbInitialMigration
+    [Migration("20210412104621_Update-POI-Table")]
+    partial class UpdatePOITable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -46,6 +46,9 @@ namespace CityInfo.API.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("CityId");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Name")
                         .IsRequired()

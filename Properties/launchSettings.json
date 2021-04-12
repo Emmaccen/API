@@ -11,9 +11,11 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development",
+            //"DbConnectionString": "@\"Server=(localdb)\\mssqllocaldb;Database=CityInfoDB;Trusted_Connection=True;"
+            }
+        }
     },
     "CityInfo.API": {
       "commandName": "Project",

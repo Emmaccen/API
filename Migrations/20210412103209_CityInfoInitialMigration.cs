@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CityInfo.API.Migrations
 {
-    public partial class CityInfoDbInitialMigration : Migration
+    public partial class CityInfoInitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

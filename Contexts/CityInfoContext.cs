@@ -16,13 +16,52 @@ namespace CityInfo.API.Contexts
         public CityInfoContext(DbContextOptions<CityInfoContext> options)
             :base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<City>()
+                .HasData(new City()
+                {
+                    Id = 1,
+                    Name = "Lagos",
+                    Description = "City of the wise"
+                },
+                new City()
+                {
+                    Id = 2,
+                    Name = "Bangalore",
+                    Description = "A lone city"
+                }); 
+            
+            modelBuilder.Entity<PointOfInterest>()
+                .HasData(
+                 new PointOfInterest
+                 {
+                     Name = "some City",
+                     Description = "City of the gods",
+                     Id = 1,
+                 },
+                new PointOfInterest
+                {
+                    Name = "some City",
+                    Description = "City of the gods",
+                    Id = 2,
+                },
+                new PointOfInterest
+                {
+                    Name = "some City",
+                    Description = "City of the gods",
+                    Id = 3,
+                });
+
+            base.OnModelCreating(modelBuilder);
         }
 
-       /* protected override object OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("connectionstring");
-            base.OnConfiguring(optionsBuilder);
-        }*/
+        /* protected override object OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+         {
+             optionsBuilder.UseSqlServer("connectionstring");
+             base.OnConfiguring(optionsBuilder);
+         }*/
     }
 }
