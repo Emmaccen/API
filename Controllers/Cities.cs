@@ -1,4 +1,5 @@
 ﻿using CityInfo.API.Models;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,20 +13,48 @@ namespace CityInfo.API.Controllers
     [Route("Api/Cities")]
     public class CitiesController : ControllerBase
     {
+        private readonly ICityInfoRepository infoRepository;
+
+        public CitiesController(ICityInfoRepository infoRepository)
+        {
+            this.infoRepository = infoRepository;
+        }
+
         [HttpGet]
         public IActionResult GetCities()
         {
-            return Ok(CitiesDataStore.Current.Cities);
+            //return Ok(CitiesDataStore.Current.Cities);
+            var cities = infoRepository.GetAllCities();
+            List<CitiesWithoutPoi> result = new List<CitiesWithoutPoi>();
+
+            foreach (var city in cities)
+            {
+                result.Add(new CitiesWithoutPoi
+                {
+                    Name = city.Description,
+                    Id = city.Id,
+                    Description = city.Description
+                });
+            }
+                return Ok(result);
         }
         [HttpGet("{id}")]
         public IActionResult GetCity(int id)
         {
-            var result = CitiesDataStore.Current.Cities.FirstOrDefault(uniqueId => uniqueId.Id == id);
+            var cities = infoRepository.GetSingleCity(id, true);
+            var result = new CitiesWithoutPoi
+            {
+                Name = cities.Description,
+                Id = cities.Id,
+                Description = cities.Description
+            };
+            return Ok(result);
+            /*var result = CitiesDataStore.Current.Cities.FirstOrDefault(uniqueId => uniqueId.Id == id);
 
             if (result == null)
                 return NotFound();
             else
-                return Ok(result);
+                return Ok(result);*/
         }
         [HttpPost(Name = "CreatedCity")]
         public IActionResult CreateCity([FromBody] CityDto newCity)

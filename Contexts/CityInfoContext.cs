@@ -41,18 +41,21 @@ namespace CityInfo.API.Contexts
                      Name = "some City",
                      Description = "City of the gods",
                      Id = 1,
+                     CityId = 1,
                  },
                 new PointOfInterest
                 {
                     Name = "some City",
                     Description = "City of the gods",
                     Id = 2,
+                    CityId = 1,
                 },
                 new PointOfInterest
                 {
                     Name = "some City",
                     Description = "City of the gods",
                     Id = 3,
+                    CityId = 2,
                 });
 
             base.OnModelCreating(modelBuilder);
