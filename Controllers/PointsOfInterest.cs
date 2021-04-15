@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CityInfo.API.Contexts;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.JsonPatch;
@@ -20,14 +21,16 @@ namespace CityInfo.API.Controllers
         private readonly IMailService _mailService;
         private readonly ICityInfoRepository infoRepository;
         private readonly IMapper mapper;
+        private readonly CityInfoContext cityInfoContext;
 
         public PointsOfInterest(ILogger<PointsOfInterest> logger, IMailService mailService
-            , ICityInfoRepository infoRepository, IMapper mapper)
+            , ICityInfoRepository infoRepository, IMapper mapper, CityInfoContext cityInfoContext)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this._mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
             this.infoRepository = infoRepository;
             this.mapper = mapper;
+            this.cityInfoContext = cityInfoContext;
         }
 
         [HttpGet]
@@ -56,7 +59,7 @@ namespace CityInfo.API.Controllers
         {
             var poi = infoRepository.GetSinglePointOfInterest(cityId, id);
             if (poi != null)
-                return Ok(mapper.Map<List<PointsOfInterestsDto>>(poi));
+                return Ok(mapper.Map<PointsOfInterestsDto>(poi));
             else
                 return NotFound();
         }
@@ -64,41 +67,22 @@ namespace CityInfo.API.Controllers
         [HttpPost]
         public IActionResult CreatePointOfInterest(int cityId, [FromBody] PointsOfInterestForCreation poi)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-
             if (poi.Name == poi.Description)
-            {
                 ModelState.AddModelError("Description", "Name and Description cannot be the same");
-            }
+
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
-            //you can use the below, if you're not doing the checks yourself
-            /* if (city == null)
-                 return NotFound();*/
-
-            var maxPoiId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterests)
-                .Max(id => id.Id);
-
-            var finalResult = new PointsOfInterestsDto()
+            if (infoRepository.CityExists(cityId))
             {
-                Name = poi.Name,
-                Id = ++maxPoiId,
-                Description = poi.Description
-            };
-
-            city.PointsOfInterests.Add(finalResult);
-            return CreatedAtRoute("CreatedPointOfInterest",
-                new
-                {
-                    cityId,
-                    finalResult.Id
-                },
-                finalResult
-                );
-
+                var finalPoi = mapper.Map<Entities.PointOfInterest>(poi);
+                infoRepository.AddPoiForSingleCity(cityId, finalPoi);
+                var response = mapper.Map<PointsOfInterestsDto>(finalPoi);
+                return CreatedAtRoute("CreatedPointOfInterest",
+                new{ cityId, response.Id}, response);
+            }
+            else
+                return NotFound();
         }
 
         [HttpPut("{poiId}")]

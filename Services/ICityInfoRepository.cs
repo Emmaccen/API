@@ -17,7 +17,12 @@ namespace CityInfo.API.Services
 
         IEnumerable<PointOfInterest> GetAllPointsOfInterests();
 
-        IEnumerable<PointOfInterest> GetSinglePointOfInterest(int cityId, int poiId);
+        PointOfInterest GetSinglePointOfInterest(int cityId, int poiId);
 
+        bool CityExists(int cityId);
+
+        bool SaveChanges();
+
+        void AddPoiForSingleCity(int cityId, PointOfInterest poi);
     }
 }

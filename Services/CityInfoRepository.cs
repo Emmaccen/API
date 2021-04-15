@@ -17,6 +17,17 @@ namespace CityInfo.API.Services
             this._cityInfoContext = cityInfoContext ?? throw new ArgumentNullException(nameof(cityInfoContext));
         }
 
+        public void AddPoiForSingleCity(int cityId, PointOfInterest poi)
+        {
+            GetSingleCity(cityId, false).PointsOfInterests.Add(poi);
+            SaveChanges();
+        }
+
+        public bool CityExists(int cityId)
+        {
+            return _cityInfoContext.City.Any(c => c.Id == cityId);
+        }
+        
         public IEnumerable<City> GetAllCities()
         {
             return _cityInfoContext.City.OrderBy(c => c.Name).ToList();
@@ -43,11 +54,16 @@ namespace CityInfo.API.Services
                 _cityInfoContext.City.FirstOrDefault(c => c.Id == cityId);
         }
 
-        public IEnumerable<PointOfInterest> GetSinglePointOfInterest(int cityId, int poiId)
+        public PointOfInterest GetSinglePointOfInterest(int cityId, int poiId)
         {
             return _cityInfoContext.PointOfInterests
                 .Where(p => p.City.Id == cityId && p.Id == poiId)
-                .ToList();
+                .FirstOrDefault();
+        }
+
+        public bool SaveChanges()
+        {
+            return _cityInfoContext.SaveChanges() >= 0;
         }
     }
 }
