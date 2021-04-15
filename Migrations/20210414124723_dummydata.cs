@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CityInfo.API.Migrations
 {
-    public partial class CityInfoInitialMigration : Migration
+    public partial class dummydata : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,8 @@ namespace CityInfo.API.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
-                    CityId = table.Column<int>(nullable: true)
+                    Description = table.Column<string>(maxLength: 200, nullable: true),
+                    CityId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -38,38 +39,37 @@ namespace CityInfo.API.Migrations
                         column: x => x.CityId,
                         principalTable: "City",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "PointsOfInterestsDto",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: false),
-                    Description = table.Column<string>(nullable: false),
-                    CityId = table.Column<int>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PointsOfInterestsDto", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_PointsOfInterestsDto_City_CityId",
-                        column: x => x.CityId,
-                        principalTable: "City",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
+            migrationBuilder.InsertData(
+                table: "City",
+                columns: new[] { "Id", "Description", "Name" },
+                values: new object[] { 1, "City of the wise", "Lagos" });
+
+            migrationBuilder.InsertData(
+                table: "City",
+                columns: new[] { "Id", "Description", "Name" },
+                values: new object[] { 2, "A lone city", "Bangalore" });
+
+            migrationBuilder.InsertData(
+                table: "PointOfInterests",
+                columns: new[] { "Id", "CityId", "Description", "Name" },
+                values: new object[] { 1, 1, "City of the gods", "some City" });
+
+            migrationBuilder.InsertData(
+                table: "PointOfInterests",
+                columns: new[] { "Id", "CityId", "Description", "Name" },
+                values: new object[] { 2, 1, "City of the gods", "some City" });
+
+            migrationBuilder.InsertData(
+                table: "PointOfInterests",
+                columns: new[] { "Id", "CityId", "Description", "Name" },
+                values: new object[] { 3, 2, "City of the gods", "some City" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_PointOfInterests_CityId",
                 table: "PointOfInterests",
-                column: "CityId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PointsOfInterestsDto_CityId",
-                table: "PointsOfInterestsDto",
                 column: "CityId");
         }
 
@@ -77,9 +77,6 @@ namespace CityInfo.API.Migrations
         {
             migrationBuilder.DropTable(
                 name: "PointOfInterests");
-
-            migrationBuilder.DropTable(
-                name: "PointsOfInterestsDto");
 
             migrationBuilder.DropTable(
                 name: "City");

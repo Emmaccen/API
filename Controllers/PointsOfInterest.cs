@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,26 +18,31 @@ namespace CityInfo.API.Controllers
     {
         private readonly ILogger<PointsOfInterest> logger;
         private readonly IMailService _mailService;
+        private readonly ICityInfoRepository infoRepository;
+        private readonly IMapper mapper;
 
-        public PointsOfInterest(ILogger<PointsOfInterest> logger, IMailService mailService)
+        public PointsOfInterest(ILogger<PointsOfInterest> logger, IMailService mailService
+            , ICityInfoRepository infoRepository, IMapper mapper)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this._mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
+            this.infoRepository = infoRepository;
+            this.mapper = mapper;
         }
 
+        [HttpGet]
         public IActionResult GetPointsOfInterests(int cityId)
         {
-
             try
             {
-                var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-                if (city == null)
+                var poi = infoRepository.GetPointOfInterestsForSingleCity(cityId);
+                if (poi == null)
                 {
                     logger.LogInformation($"The city with id {cityId} cannot be found");
                     return NotFound();
-                }else
-                return Ok(city.PointsOfInterests);
-
+                }
+                else
+                    return Ok(mapper.Map<List<PointsOfInterestsDto>>(poi));
             }
             catch (Exception ex)
             {
@@ -49,15 +54,11 @@ namespace CityInfo.API.Controllers
         [HttpGet("{id}", Name = "CreatedPointOfInterest")]
         public IActionResult GetSinglePointOfInterest(int cityId, int id)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-            if (city == null)
+            var poi = infoRepository.GetSinglePointOfInterest(cityId, id);
+            if (poi != null)
+                return Ok(mapper.Map<List<PointsOfInterestsDto>>(poi));
+            else
                 return NotFound();
-
-            var singlePointOfInterest = city.PointsOfInterests.FirstOrDefault(interest => interest.Id == id);
-            if (singlePointOfInterest == null)
-                return NotFound();
-
-            return Ok(singlePointOfInterest);
         }
 
         [HttpPost]
@@ -120,7 +121,7 @@ namespace CityInfo.API.Controllers
         }
 
         [HttpPatch("{poiId}")]
-        public IActionResult UpdatePointOfInterest(int poiId, int cityId, 
+        public IActionResult UpdatePointOfInterest(int poiId, int cityId,
             [FromBody] JsonPatchDocument<PointsOfInterestForUpdateDto> poiUpdate)
         {
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
@@ -164,6 +165,10 @@ namespace CityInfo.API.Controllers
 
             return NoContent();
         }
+
+        /*[HttpGet]
+        public IActionResult GetAllPointsOfInterests() => Ok(infoRepository.GetAllPointsOfInterests());*/
+
 
         [HttpDelete("{poiId}")]
         public IActionResult DeletePointOfInterest(int cityId, int poiId)

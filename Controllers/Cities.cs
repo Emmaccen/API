@@ -1,10 +1,9 @@
-﻿using CityInfo.API.Models;
+﻿using AutoMapper;
+using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CityInfo.API.Controllers
 {
@@ -14,48 +13,36 @@ namespace CityInfo.API.Controllers
     public class CitiesController : ControllerBase
     {
         private readonly ICityInfoRepository infoRepository;
+        private readonly IMapper mapper;
 
-        public CitiesController(ICityInfoRepository infoRepository)
+        public CitiesController(ICityInfoRepository infoRepository, IMapper mapper)
         {
             this.infoRepository = infoRepository;
+            this.mapper = mapper;
+        }
+
+        [HttpGet]
+        [Route("/")]
+        public IActionResult StartUp()
+        {
+            return Ok(new { value1 = 1, value2 = 2 });
         }
 
         [HttpGet]
         public IActionResult GetCities()
         {
-            //return Ok(CitiesDataStore.Current.Cities);
             var cities = infoRepository.GetAllCities();
-            List<CitiesWithoutPoi> result = new List<CitiesWithoutPoi>();
-
-            foreach (var city in cities)
-            {
-                result.Add(new CitiesWithoutPoi
-                {
-                    Name = city.Description,
-                    Id = city.Id,
-                    Description = city.Description
-                });
-            }
-                return Ok(result);
+            // using mapper
+            return Ok(mapper.Map<IEnumerable<CitiesWithoutPoi>>(cities));
         }
+
         [HttpGet("{id}")]
         public IActionResult GetCity(int id)
         {
             var cities = infoRepository.GetSingleCity(id, true);
-            var result = new CitiesWithoutPoi
-            {
-                Name = cities.Description,
-                Id = cities.Id,
-                Description = cities.Description
-            };
-            return Ok(result);
-            /*var result = CitiesDataStore.Current.Cities.FirstOrDefault(uniqueId => uniqueId.Id == id);
-
-            if (result == null)
-                return NotFound();
-            else
-                return Ok(result);*/
+            return Ok(mapper.Map<CityDto>(cities));
         }
+
         [HttpPost(Name = "CreatedCity")]
         public IActionResult CreateCity([FromBody] CityDto newCity)
         {

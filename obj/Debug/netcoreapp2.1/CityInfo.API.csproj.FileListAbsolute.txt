@@ -14,6 +14,6 @@ C:\Users\User\source\repos\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.dll
 C:\Users\User\source\repos\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.pdb
 C:\Users\User\source\repos\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.genruntimeconfig.cache
 C:\Users\User\source\repos\CityInfo.API\bin\Debug\netcoreapp2.1\Nlog.config
-C:\Users\User\source\repos\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\CityInfo.API\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\User\source\repos\CityInfo.API\bin\Debug\netcoreapp2.1\appsettings.Production.json
+C:\Users\User\source\repos\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.csproj.CoreCompileInputs.cache

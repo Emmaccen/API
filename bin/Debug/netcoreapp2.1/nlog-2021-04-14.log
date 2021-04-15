@@ -1,0 +1,1363 @@
+2021-04-14 11:23:37.5246|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 11:23:38.1452|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 11:23:38.1452|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 11:23:38.1807|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.3801ms 200 
+2021-04-14 11:23:38.2617|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 119.5711ms 404 text/plain
+2021-04-14 11:23:53.6135|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 11:23:53.6514|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 11:23:53.7886|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 11:23:54.0432|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 11:23:56.0305|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 11:23:56.1034|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2308.6631ms.
+2021-04-14 11:23:56.1182|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 11:23:56.1960|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 2537.9278ms
+2021-04-14 11:23:56.2031|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2589.7223ms 200 application/json; charset=utf-8
+2021-04-14 11:48:17.3838|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 11:48:17.8472|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 11:48:17.8472|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 11:48:17.8793|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.5757ms 200 
+2021-04-14 11:48:17.9650|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 119.3728ms 404 text/plain
+2021-04-14 11:48:23.5423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 11:48:23.5751|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 11:48:23.6585|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 11:48:23.8238|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 11:48:25.0823|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 11:53:20.6923|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 11:53:21.2337|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 11:53:21.2337|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 11:53:21.2608|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.5239ms 200 
+2021-04-14 11:53:21.3187|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.0114ms 404 text/plain
+2021-04-14 11:53:25.1949|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 11:53:25.2318|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 11:53:25.3249|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 11:53:25.4908|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 11:53:26.7602|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 11:53:26.7931|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointsOfInterestsDto] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 11:53:26.8234|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1492.8409ms.
+2021-04-14 11:53:26.8344|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 11:53:26.8917|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 1650.2602ms
+2021-04-14 11:53:26.8917|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1705.8411ms 200 application/json; charset=utf-8
+2021-04-14 12:01:13.7729|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 12:01:14.2319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 12:01:14.2319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 12:01:14.2637|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.2777ms 200 
+2021-04-14 12:01:14.3304|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.2781ms 404 text/plain
+2021-04-14 12:01:16.7945|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 12:01:16.8275|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 12:01:16.9101|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 12:01:17.0751|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:01:18.3713|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 12:01:18.4399|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1523.8888ms.
+2021-04-14 12:01:18.4399|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 12:01:18.5084|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 1671.8104ms
+2021-04-14 12:01:18.5084|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1720.3778ms 200 application/json; charset=utf-8
+2021-04-14 12:01:20.1703|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 12:01:20.1913|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 12:01:20.2155|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 12:01:20.2287|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:01:20.3050|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 12:01:20.3205|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 12:01:20.3361|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 117.7777ms.
+2021-04-14 12:01:20.3361|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 12:01:20.3361|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 147.2224ms
+2021-04-14 12:01:20.3451|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 174.4652ms 200 application/json; charset=utf-8
+2021-04-14 12:06:47.7400|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:07:22.7333|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:07:33.3219|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (427ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDB];
+2021-04-14 12:07:33.4194|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2021-04-14 12:07:33.4704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2021-04-14 12:07:33.4704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-04-14 12:07:33.4704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2021-04-14 12:07:33.4704|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412103209_CityInfoInitialMigration'.
+2021-04-14 12:07:33.5122|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [City] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_City] PRIMARY KEY ([Id])
+);
+2021-04-14 12:07:33.5171|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterests] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_PointOfInterests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterests_City_CityId] FOREIGN KEY ([CityId]) REFERENCES [City] ([Id]) ON DELETE NO ACTION
+);
+2021-04-14 12:07:33.5171|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointsOfInterestsDto] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_PointsOfInterestsDto] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointsOfInterestsDto_City_CityId] FOREIGN KEY ([CityId]) REFERENCES [City] ([Id]) ON DELETE NO ACTION
+);
+2021-04-14 12:07:33.6052|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]);
+2021-04-14 12:07:33.6052|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointsOfInterestsDto_CityId] ON [PointsOfInterestsDto] ([CityId]);
+2021-04-14 12:07:33.6109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412103209_CityInfoInitialMigration', N'2.1.14-servicing-32113');
+2021-04-14 12:07:33.6109|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412104621_Update-POI-Table'.
+2021-04-14 12:07:33.6109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [PointOfInterests] ADD [Description] nvarchar(200) NULL;
+2021-04-14 12:07:33.6109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412104621_Update-POI-Table', N'2.1.14-servicing-32113');
+2021-04-14 12:07:33.6109|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412124919_AddedDummyData'.
+2021-04-14 12:07:33.6469|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] ON;
+INSERT INTO [City] ([Id], [Description], [Name])
+VALUES (1, N'City of the wise', N'Lagos'),
+(2, N'A lone city', N'Bangalore');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] OFF;
+2021-04-14 12:07:35.1546|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (1, NULL, N'City of the gods', N'some City'),
+(2, NULL, N'City of the gods', N'some City'),
+(3, NULL, N'City of the gods', N'some City');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;
+2021-04-14 12:07:35.1546|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412124919_AddedDummyData', N'2.1.14-servicing-32113');
+2021-04-14 12:07:35.1584|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210413132328_dummyData'.
+2021-04-14 12:07:35.1584|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210413132328_dummyData', N'2.1.14-servicing-32113');
+2021-04-14 12:07:35.1584|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210414110647_updatedDatabase'.
+2021-04-14 12:07:35.1584|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DROP TABLE [PointsOfInterestsDto];
+2021-04-14 12:07:35.1584|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210414110647_updatedDatabase', N'2.1.14-servicing-32113');
+2021-04-14 12:09:05.5194|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 12:09:06.0496|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 12:09:06.0496|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 12:09:06.0739|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.4095ms 200 
+2021-04-14 12:09:06.1417|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.5722ms 404 text/plain
+2021-04-14 12:09:13.4797|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 12:09:13.5077|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 12:09:13.5899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 12:09:13.7546|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:09:13.9297|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 12:09:13.9798|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 384.3486ms.
+2021-04-14 12:09:13.9888|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 12:09:14.0417|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 526.4935ms
+2021-04-14 12:09:14.0478|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 568.8928ms 200 application/json; charset=utf-8
+2021-04-14 12:09:17.3744|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 12:09:17.3947|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 12:09:17.4138|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 12:09:17.4221|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:09:17.5002|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 12:09:17.5002|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 12:09:17.5250|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 108.2881ms.
+2021-04-14 12:09:17.5250|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 12:09:17.5250|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 133.6377ms
+2021-04-14 12:09:17.5350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 161.1001ms 200 application/json; charset=utf-8
+2021-04-14 12:12:44.2288|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/TestingDatabaseTable  
+2021-04-14 12:12:44.2383|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Testing", controller = "TestingDatabaseTable"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Testing() on controller CityInfo.API.Controllers.TestingDatabaseTable (CityInfo.API).
+2021-04-14 12:12:44.2383|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) - Validation state: Valid
+2021-04-14 12:12:44.2383|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.3194ms.
+2021-04-14 12:12:44.2915|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-04-14 12:12:44.2915|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) in 53.2842ms
+2021-04-14 12:12:44.2980|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.4569ms 200 
+2021-04-14 12:12:46.6097|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/TestingDatabaseTable  
+2021-04-14 12:12:46.6140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Testing", controller = "TestingDatabaseTable"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Testing() on controller CityInfo.API.Controllers.TestingDatabaseTable (CityInfo.API).
+2021-04-14 12:12:46.6140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) - Validation state: Valid
+2021-04-14 12:12:46.6140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.0044ms.
+2021-04-14 12:12:46.6140|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-04-14 12:12:46.6267|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.TestingDatabaseTable.Testing (CityInfo.API) in 9.0853ms
+2021-04-14 12:12:46.6267|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.5996ms 200 
+2021-04-14 12:12:56.4550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 12:12:56.4550|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 12:12:56.4550|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 12:12:56.4550|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 12:12:56.4717|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 12:12:56.4717|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 12:12:56.4717|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.7344ms.
+2021-04-14 12:12:56.4717|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 12:12:56.4869|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 24.9468ms
+2021-04-14 12:12:56.4869|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.3922ms 200 application/json; charset=utf-8
+2021-04-14 13:01:08.2195|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:01:14.7104|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:01:15.0707|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:01:15.2424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 177.6166ms 404 text/plain
+2021-04-14 13:18:13.5126|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:18:14.5636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:18:14.5636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:18:14.6110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.362ms 200 
+2021-04-14 13:18:14.7233|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.0601ms 404 text/plain
+2021-04-14 13:18:17.8023|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 13:18:17.8716|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:18:18.1455|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 13:18:18.6359|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:18:19.2680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 13:18:19.3997|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1241.7202ms.
+2021-04-14 13:18:19.4197|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 13:18:19.5480|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 1664.157ms
+2021-04-14 13:18:19.5480|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1758.8553ms 200 application/json; charset=utf-8
+2021-04-14 13:18:21.4461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:18:21.5203|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:18:21.5722|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:19:02.3573|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:19:02.5880|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 13:19:02.6152|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:19:02.6402|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 41063.6992ms.
+2021-04-14 13:19:02.6456|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:19:02.6456|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 41125.0256ms
+2021-04-14 13:19:02.6456|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41214.1483ms 200 application/json; charset=utf-8
+2021-04-14 13:19:11.8591|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities  
+2021-04-14 13:19:11.8733|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:19:11.8789|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 13:19:11.8789|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:19:11.8936|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 13:19:11.8936|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.751ms.
+2021-04-14 13:19:11.9062|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 13:19:11.9062|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 33.4555ms
+2021-04-14 13:19:11.9244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.7354ms 200 application/json; charset=utf-8
+2021-04-14 13:19:19.1020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:19:19.1020|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:19:19.1150|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:19:23.5208|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:19:24.1041|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 13:19:24.1041|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:19:55.8983|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:19:56.0596|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'CityInfo.API.Contexts.CityInfoContext'.
+System.InvalidOperationException: An exception occurred while reading a database value for property 'PointOfInterest.CityId'. The expected type was 'System.Int32' but the actual value was null. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.TryReadValue[TValue](ValueBuffer& valueBuffer, Int32 index, IPropertyBase property)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.ThrowReadValueException[TValue](Exception exception, Object value, IPropertyBase property)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.TryReadValue[TValue](ValueBuffer& valueBuffer, Int32 index, IPropertyBase property)
+   at lambda_method(Closure , MaterializationContext )
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.UnbufferedEntityShaper`1.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2021-04-14 13:20:41.9063|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:20:41.9454|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'CityInfo.API.Contexts.CityInfoContext'.
+System.InvalidOperationException: An exception occurred while reading a database value for property 'PointOfInterest.CityId'. The expected type was 'System.Int32' but the actual value was null. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.TryReadValue[TValue](ValueBuffer& valueBuffer, Int32 index, IPropertyBase property)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.ThrowReadValueException[TValue](Exception exception, Object value, IPropertyBase property)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityMaterializerSource.TryReadValue[TValue](ValueBuffer& valueBuffer, Int32 index, IPropertyBase property)
+   at lambda_method(Closure , MaterializationContext )
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.UnbufferedEntityShaper`1.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2021-04-14 13:22:34.9740|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:22:36.2506|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:22:36.2506|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:22:36.3805|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 132.3152ms 200 
+2021-04-14 13:22:36.5223|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 285.1026ms 404 text/plain
+2021-04-14 13:22:42.6913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:22:42.8507|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:22:43.2889|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:22:48.8628|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:22:49.9716|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 13:22:50.0273|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:22:57.5397|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:23:06.8408|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23527.9654ms.
+2021-04-14 13:23:06.8928|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:23:07.0095|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 24147.3811ms
+2021-04-14 13:23:07.0208|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24333.8396ms 200 application/json; charset=utf-8
+2021-04-14 13:25:32.6431|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:25:32.6431|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:25:32.6783|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:25:37.7792|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:25:38.1520|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name]
+FROM [City] AS [p]
+WHERE [p].[Id] = @__cityId_0
+ORDER BY [p].[Id]
+2021-04-14 13:25:38.1607|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p.PointsOfInterests].[Id], [p.PointsOfInterests].[CityId], [p.PointsOfInterests].[Description], [p.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [p.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [p0].[Id]
+    FROM [City] AS [p0]
+    WHERE [p0].[Id] = @__cityId_0
+    ORDER BY [p0].[Id]
+) AS [t] ON [p.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:25:51.3044|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:27:23.1117|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:27:24.4465|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:27:24.4465|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:27:24.5118|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.4238ms 200 
+2021-04-14 13:27:24.7019|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 261.9887ms 404 text/plain
+2021-04-14 13:27:28.7391|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:27:28.9280|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:27:29.1738|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:27:34.5249|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:27:35.3127|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:27:35.3836|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:27:47.5368|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:28:08.4120|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39217.0686ms.
+2021-04-14 13:28:08.4427|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:28:08.5443|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 39599.1994ms
+2021-04-14 13:28:08.5655|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39830.0867ms 200 application/json; charset=utf-8
+2021-04-14 13:29:33.2365|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:29:34.1177|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:29:34.1177|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:29:34.1599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.2481ms 200 
+2021-04-14 13:29:34.3164|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 199.9093ms 404 text/plain
+2021-04-14 13:29:50.8347|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:29:50.9649|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:29:51.2002|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:29:54.9473|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:29:55.0893|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:29:55.2085|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:30:05.6085|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:30:10.6735|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:30:41.3758|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:30:42.2560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:30:42.2560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:30:42.2908|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:30:42.3030|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:30:50.4624|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:31:10.6274|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 79397.7455ms.
+2021-04-14 13:31:10.6274|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 75362.1524ms.
+2021-04-14 13:31:10.6795|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:31:10.6954|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:31:10.8628|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 75720.356ms
+2021-04-14 13:31:10.8628|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 79863.2321ms
+2021-04-14 13:31:10.8768|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75998.7543ms 200 application/json; charset=utf-8
+2021-04-14 13:31:10.8768|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 80047.7627ms 200 application/json; charset=utf-8
+2021-04-14 13:39:19.4935|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:39:20.5427|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:39:20.5427|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:39:20.5997|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.5654ms 200 
+2021-04-14 13:39:20.8103|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 264.3114ms 404 text/plain
+2021-04-14 13:39:28.3912|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:39:28.4749|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:39:28.9020|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:39:29.5488|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:39:30.5142|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[@__cityId_0='?' (DbType = Int32), @__cityId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name], [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [City] AS [c]
+LEFT JOIN [PointOfInterests] AS [c.PointsOfInterests] ON [c].[Id] = [c.PointsOfInterests].[CityId]
+WHERE ([c].[Id] = @__cityId_0) AND ([c.PointsOfInterests].[Id] = @__cityId_1)
+2021-04-14 13:39:30.8566|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1919.6361ms.
+2021-04-14 13:39:30.8953|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CitiesWithoutPoi'.
+2021-04-14 13:39:31.0416|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 2548.2475ms
+2021-04-14 13:39:31.0580|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2665.6092ms 200 application/json; charset=utf-8
+2021-04-14 13:40:23.6761|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:40:32.5253|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:40:42.7430|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:40:53.5130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (446ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDB];
+2021-04-14 13:40:53.6465|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (124ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2021-04-14 13:40:53.7472|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2021-04-14 13:40:53.7508|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-04-14 13:40:53.7508|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2021-04-14 13:40:53.7508|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412103209_CityInfoInitialMigration'.
+2021-04-14 13:40:53.8079|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [City] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_City] PRIMARY KEY ([Id])
+);
+2021-04-14 13:40:53.8136|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterests] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_PointOfInterests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterests_City_CityId] FOREIGN KEY ([CityId]) REFERENCES [City] ([Id]) ON DELETE NO ACTION
+);
+2021-04-14 13:40:53.8136|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointsOfInterestsDto] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_PointsOfInterestsDto] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointsOfInterestsDto_City_CityId] FOREIGN KEY ([CityId]) REFERENCES [City] ([Id]) ON DELETE NO ACTION
+);
+2021-04-14 13:40:54.0680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]);
+2021-04-14 13:40:54.0680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointsOfInterestsDto_CityId] ON [PointsOfInterestsDto] ([CityId]);
+2021-04-14 13:40:54.0810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412103209_CityInfoInitialMigration', N'2.1.14-servicing-32113');
+2021-04-14 13:40:54.0810|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412104621_Update-POI-Table'.
+2021-04-14 13:40:54.1164|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [PointOfInterests] ADD [Description] nvarchar(200) NULL;
+2021-04-14 13:40:54.1164|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412104621_Update-POI-Table', N'2.1.14-servicing-32113');
+2021-04-14 13:40:54.1257|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210412124919_AddedDummyData'.
+2021-04-14 13:40:54.2024|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] ON;
+INSERT INTO [City] ([Id], [Description], [Name])
+VALUES (1, N'City of the wise', N'Lagos'),
+(2, N'A lone city', N'Bangalore');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] OFF;
+2021-04-14 13:40:56.6565|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (1, NULL, N'City of the gods', N'some City'),
+(2, NULL, N'City of the gods', N'some City'),
+(3, NULL, N'City of the gods', N'some City');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;
+2021-04-14 13:40:56.6565|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210412124919_AddedDummyData', N'2.1.14-servicing-32113');
+2021-04-14 13:40:56.6565|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210413132328_dummyData'.
+2021-04-14 13:40:56.6565|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210413132328_dummyData', N'2.1.14-servicing-32113');
+2021-04-14 13:40:56.6760|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210414110647_updatedDatabase'.
+2021-04-14 13:40:56.6909|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DROP TABLE [PointsOfInterestsDto];
+2021-04-14 13:40:56.6909|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210414110647_updatedDatabase', N'2.1.14-servicing-32113');
+2021-04-14 13:40:58.1524|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210414124032_update'.
+2021-04-14 13:40:58.1768|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DROP INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests];
+2021-04-14 13:40:58.1768|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DELETE FROM [PointOfInterests]
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2021-04-14 13:40:58.2793|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]);
+2021-04-14 13:47:23.5195|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:47:47.9398|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:47:58.6180|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (430ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDB];
+2021-04-14 13:47:58.7344|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (110ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2021-04-14 13:47:58.8129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2021-04-14 13:47:58.8129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-04-14 13:47:58.8129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2021-04-14 13:47:58.8318|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20210414124723_dummydata'.
+2021-04-14 13:47:58.8661|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [City] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_City] PRIMARY KEY ([Id])
+);
+2021-04-14 13:47:58.8661|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterests] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    [CityId] int NOT NULL,
+    CONSTRAINT [PK_PointOfInterests] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterests_City_CityId] FOREIGN KEY ([CityId]) REFERENCES [City] ([Id]) ON DELETE CASCADE
+);
+2021-04-14 13:47:58.9123|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] ON;
+INSERT INTO [City] ([Id], [Description], [Name])
+VALUES (1, N'City of the wise', N'Lagos');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] OFF;
+2021-04-14 13:47:59.1881|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] ON;
+INSERT INTO [City] ([Id], [Description], [Name])
+VALUES (2, N'A lone city', N'Bangalore');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[City]'))
+    SET IDENTITY_INSERT [City] OFF;
+2021-04-14 13:47:59.2279|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (1, 1, N'City of the gods', N'some City');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;
+2021-04-14 13:47:59.2672|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (2, 1, N'City of the gods', N'some City');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;
+2021-04-14 13:48:00.8804|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (3, 2, N'City of the gods', N'some City');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;
+2021-04-14 13:48:00.8804|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterests_CityId] ON [PointOfInterests] ([CityId]);
+2021-04-14 13:48:00.8804|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20210414124723_dummydata', N'2.1.14-servicing-32113');
+2021-04-14 13:49:26.6864|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:49:27.9458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:49:27.9458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:49:27.9854|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.4312ms 200 
+2021-04-14 13:49:28.1479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 204.6705ms 404 text/plain
+2021-04-14 13:49:33.2442|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:49:33.3258|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:49:33.5249|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:49:53.2446|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:49:53.3950|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:49:53.4940|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:50:00.4790|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:50:00.4790|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:50:01.4094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:50:01.4094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:50:01.5578|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:50:01.5682|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:51:33.8572|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:51:35.0499|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:51:35.0499|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:51:35.1277|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.1086ms 200 
+2021-04-14 13:51:35.2536|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 215.0379ms 404 text/plain
+2021-04-14 13:51:39.2156|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:51:39.3583|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:51:39.7907|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:51:45.5611|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:51:46.4039|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:51:46.4873|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:51:55.0646|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[CityId], [p].[Description], [p].[Name]
+FROM [PointOfInterests] AS [p]
+2021-04-14 13:52:59.6027|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:53:00.9913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:53:00.9913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:53:01.0971|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.811ms 200 
+2021-04-14 13:53:01.2673|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 290.4314ms 404 text/plain
+2021-04-14 13:53:04.6029|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:53:04.7519|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:53:04.9952|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:53:10.3261|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:53:11.2162|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:53:11.2732|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:54:54.7203|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:54:55.8445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:54:55.8415|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:54:55.9375|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.3539ms 200 
+2021-04-14 13:54:56.0691|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 236.9499ms 404 text/plain
+2021-04-14 13:54:59.3984|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:54:59.5564|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:54:59.9488|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:55:05.4530|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:55:06.4179|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (30ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:55:06.5630|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 13:58:28.3571|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 13:58:29.7645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 13:58:29.7645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 13:58:29.8416|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.6245ms 200 
+2021-04-14 13:58:30.0242|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 264.1728ms 404 text/plain
+2021-04-14 13:58:36.3455|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 13:58:36.4944|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 13:58:36.7424|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 13:58:41.8976|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 13:58:42.9436|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 13:58:43.0367|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 14:00:45.7120|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 14:00:46.6085|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 14:00:46.6085|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 14:00:46.6490|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.1619ms 200 
+2021-04-14 14:00:46.7645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.152ms 404 text/plain
+2021-04-14 14:00:50.9864|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 14:00:51.1540|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 14:00:51.3899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 14:00:58.1492|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 14:00:59.2227|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 14:00:59.3636|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 14:04:39.0765|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 14:04:40.4913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 14:04:40.4913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 14:04:40.5626|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.0896ms 200 
+2021-04-14 14:04:40.7856|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 299.0077ms 404 text/plain
+2021-04-14 14:31:10.2317|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 14:31:10.7657|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 14:31:10.7675|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 14:31:10.7945|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.7543ms 200 
+2021-04-14 14:31:10.8542|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.0017ms 404 text/plain
+2021-04-14 14:31:16.4376|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 14:31:16.4744|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 14:31:16.5617|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 14:31:21.1270|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 14:31:22.6632|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 14:31:22.7247|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 14:31:37.2258|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20658.5263ms.
+2021-04-14 14:31:37.2370|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 14:32:08.6474|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 52166.8532ms
+2021-04-14 14:32:08.6474|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52215.7911ms 200 application/json; charset=utf-8
+2021-04-14 14:49:19.1426|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 14:49:19.7418|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 14:49:19.7418|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 14:49:19.7718|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.2353ms 200 
+2021-04-14 14:49:19.8293|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.3929ms 404 text/plain
+2021-04-14 14:49:25.5126|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 14:49:25.5532|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 14:49:25.6694|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 14:49:28.5391|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 14:49:29.9037|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 14:49:29.9444|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 14:49:29.9862|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4309.5522ms.
+2021-04-14 14:49:29.9862|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 14:49:30.0610|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 4500.8459ms
+2021-04-14 14:49:30.0682|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4555.4197ms 200 application/json; charset=utf-8
+2021-04-14 15:09:57.0697|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:09:57.6254|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:09:57.6240|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:09:57.6613|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.0714ms 200 
+2021-04-14 15:09:57.7827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.8162ms 404 text/plain
+2021-04-14 15:10:13.0888|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 15:10:13.1395|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:13.2547|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:13.4528|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:14.9385|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:14.9853|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:10:15.0397|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1774.8101ms.
+2021-04-14 15:10:15.0599|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:10:15.1576|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 2006.1778ms
+2021-04-14 15:10:15.1576|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2077.1446ms 200 application/json; charset=utf-8
+2021-04-14 15:10:18.5410|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/10  
+2021-04-14 15:10:18.5410|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:18.5483|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:18.5483|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:18.5483|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:18.5639|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.8108ms.
+2021-04-14 15:10:18.5639|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'null'.
+2021-04-14 15:10:18.5639|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 23.6868ms
+2021-04-14 15:10:18.5639|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.3302ms 204 
+2021-04-14 15:10:22.1939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/10  
+2021-04-14 15:10:22.1939|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:22.1939|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:22.2041|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:22.2041|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:22.2041|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.8586ms.
+2021-04-14 15:10:22.2041|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'null'.
+2021-04-14 15:10:22.2041|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 18.2547ms
+2021-04-14 15:10:22.2226|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.4957ms 204 
+2021-04-14 15:10:33.7799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/1  
+2021-04-14 15:10:33.7829|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:33.7829|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:33.7829|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:33.7829|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:33.7977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:10:33.7977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.0102ms.
+2021-04-14 15:10:33.7977|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:10:33.7977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 22.7291ms
+2021-04-14 15:10:33.7977|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.077ms 200 application/json; charset=utf-8
+2021-04-14 15:10:48.1458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/11  
+2021-04-14 15:10:48.1458|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:48.1458|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:48.1567|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:48.1567|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:48.1567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.5421ms.
+2021-04-14 15:10:48.1567|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'null'.
+2021-04-14 15:10:48.1567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 20.0539ms
+2021-04-14 15:10:48.1761|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.4432ms 204 
+2021-04-14 15:10:57.1691|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/1  
+2021-04-14 15:10:57.1719|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:10:57.1719|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:10:57.1719|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:10:57.1719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:10:57.1719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:10:57.1905|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.0069ms.
+2021-04-14 15:10:57.1905|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:10:57.1905|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 21.6427ms
+2021-04-14 15:10:57.1905|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.2835ms 200 application/json; charset=utf-8
+2021-04-14 15:12:49.3550|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:12:49.9497|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:12:49.9497|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:12:49.9819|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.0699ms 200 
+2021-04-14 15:12:50.0488|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.8139ms 404 text/plain
+2021-04-14 15:13:03.2435|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/1/includePoi=true  
+2021-04-14 15:13:03.2435|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.4817ms 404 text/plain
+2021-04-14 15:13:09.8240|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/1?includePoi=true  
+2021-04-14 15:13:09.8659|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:13:09.9776|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:13:10.1382|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:13:11.3470|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:13:11.3777|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:13:11.4114|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1428.3807ms.
+2021-04-14 15:13:11.4260|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:13:11.4911|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 1618.5834ms
+2021-04-14 15:13:11.4911|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1675.6483ms 200 application/json; charset=utf-8
+2021-04-14 15:13:23.6214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/cities/1?includePoi=false  
+2021-04-14 15:13:23.6265|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:13:23.6265|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:13:23.6265|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:13:23.6441|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:13:23.6441|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:13:23.6441|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.0554ms.
+2021-04-14 15:13:23.6441|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:13:23.6618|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 29.7961ms
+2021-04-14 15:13:23.6618|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.2492ms 200 application/json; charset=utf-8
+2021-04-14 15:42:12.0559|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:42:12.5391|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:42:12.5391|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:42:12.5696|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.9482ms 200 
+2021-04-14 15:42:12.6457|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.5254ms 404 text/plain
+2021-04-14 15:42:19.8355|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/GetAllPointsOfInterests  
+2021-04-14 15:42:19.8355|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.8714ms 404 text/plain
+2021-04-14 15:42:22.2381|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/GetAllPointsOfInterests  
+2021-04-14 15:42:22.2381|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.5602ms 404 text/plain
+2021-04-14 15:43:23.3587|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:43:23.9231|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:43:23.9214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:43:23.9488|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.375ms 200 
+2021-04-14 15:43:24.0071|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.5459ms 404 text/plain
+2021-04-14 15:43:29.2666|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/GetAllPointsOfInterests  
+2021-04-14 15:43:29.2666|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.01ms 404 text/plain
+2021-04-14 15:44:23.7185|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:44:24.1893|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:44:24.1893|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:44:24.2178|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.9207ms 200 
+2021-04-14 15:44:24.2920|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 101.5962ms 404 text/plain
+2021-04-14 15:44:29.9102|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/GetAllPointsOfInterests  
+2021-04-14 15:44:29.9102|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3483ms 404 text/plain
+2021-04-14 15:49:48.4614|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:49:49.0478|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:49:49.0478|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:49:49.0748|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.036ms 200 
+2021-04-14 15:49:49.1424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 97.0846ms 404 text/plain
+2021-04-14 15:50:09.4170|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:50:09.8718|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:50:09.8718|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:50:09.9001|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.4781ms 200 
+2021-04-14 15:50:10.0010|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-04-14 15:50:10.0551|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 185.573ms 500 text/html; charset=utf-8
+2021-04-14 15:50:42.2730|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:50:42.7456|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:50:42.7456|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:50:42.7717|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.6705ms 200 
+2021-04-14 15:50:42.8468|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.8566ms 404 text/plain
+2021-04-14 15:51:57.2940|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:51:57.7570|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:51:57.7570|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:51:57.7866|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.6085ms 200 
+2021-04-14 15:51:57.8653|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "startUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult startUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:51:57.9332|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.startUp (CityInfo.API) - Validation state: Valid
+2021-04-14 15:51:57.9395|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.startUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5884ms.
+2021-04-14 15:51:57.9395|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 15:51:58.0089|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.startUp (CityInfo.API) in 138.2054ms
+2021-04-14 15:51:58.0089|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 261.0464ms 200 application/json; charset=utf-8
+2021-04-14 15:53:36.9310|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:53:37.5508|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:53:37.5508|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:53:37.5780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.7821ms 200 
+2021-04-14 15:53:37.6500|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:53:37.7251|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 15:53:37.7251|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.3633ms.
+2021-04-14 15:53:37.7392|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 15:53:37.7826|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 126.8678ms
+2021-04-14 15:53:37.7826|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 241.2668ms 200 application/json; charset=utf-8
+2021-04-14 15:53:40.7312|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/1  
+2021-04-14 15:53:40.7485|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:53:40.7676|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) - Validation state: Valid
+2021-04-14 15:53:40.9345|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:53:41.4451|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/GetAllPointsOfInterests  
+2021-04-14 15:53:41.4451|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:53:41.4597|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2021-04-14 15:53:41.4727|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 19.9973ms
+2021-04-14 15:53:41.4727|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.3228ms 400 application/json; charset=utf-8
+2021-04-14 15:53:42.1933|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+WHERE [c].[Id] = @__cityId_0
+ORDER BY [c].[Id]
+2021-04-14 15:53:42.2304|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cityId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [PointOfInterests] AS [c.PointsOfInterests]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [City] AS [c0]
+    WHERE [c0].[Id] = @__cityId_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.PointsOfInterests].[CityId] = [t].[Id]
+ORDER BY [t].[Id]
+2021-04-14 15:53:42.2651|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1494.2856ms.
+2021-04-14 15:53:42.2680|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CityInfo.API.Models.CityDto'.
+2021-04-14 15:53:42.2680|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 1525.6655ms
+2021-04-14 15:53:42.2680|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1549.416ms 200 application/json; charset=utf-8
+2021-04-14 15:57:53.0215|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 15:57:53.4388|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 15:57:53.4388|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 15:57:53.4684|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.3646ms 200 
+2021-04-14 15:57:53.5503|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:57:53.6228|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 15:57:53.6286|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.652ms.
+2021-04-14 15:57:53.6286|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 15:57:53.6816|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 125.6822ms
+2021-04-14 15:57:53.6904|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 254.052ms 200 application/json; charset=utf-8
+2021-04-14 15:58:01.6076|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/GetAllPointsOfInterests  
+2021-04-14 15:58:01.6269|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCity", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCity(Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:58:01.6422|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2021-04-14 15:58:01.6422|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCity (CityInfo.API) in 18.2965ms
+2021-04-14 15:58:01.6422|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.345ms 400 application/json; charset=utf-8
+2021-04-14 15:58:05.7831|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/cities/  
+2021-04-14 15:58:05.7831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 15:58:05.7831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) - Validation state: Valid
+2021-04-14 15:58:05.9705|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 15:58:07.1064|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name]
+FROM [City] AS [c]
+ORDER BY [c].[Name]
+2021-04-14 15:58:07.1541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1361.0177ms.
+2021-04-14 15:58:07.1575|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CitiesWithoutPoi, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 15:58:07.1575|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 1373.663ms
+2021-04-14 15:58:07.1722|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1385.5127ms 200 application/json; charset=utf-8
+2021-04-14 16:01:48.2066|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:01:48.7504|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:01:48.7504|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:01:48.7828|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.9446ms 200 
+2021-04-14 16:01:48.8620|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:01:48.9394|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:01:48.9394|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.7482ms.
+2021-04-14 16:01:48.9608|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:01:49.0403|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 169.9223ms
+2021-04-14 16:01:49.0493|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 300.2729ms 200 application/json; charset=utf-8
+2021-04-14 16:01:54.8965|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/getAllPointsOfinterest  
+2021-04-14 16:01:54.9069|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.8174ms 404 text/plain
+2021-04-14 16:03:10.7551|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:03:11.4087|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:03:11.4087|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:03:11.4339|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.3562ms 200 
+2021-04-14 16:03:11.5099|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:03:11.5803|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:03:11.5803|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.0175ms.
+2021-04-14 16:03:11.5987|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:03:11.6497|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 134.1759ms
+2021-04-14 16:03:11.6497|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 249.6528ms 200 application/json; charset=utf-8
+2021-04-14 16:03:17.2589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/getAllPointsOfInterest  
+2021-04-14 16:03:17.2589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.7401ms 404 text/plain
+2021-04-14 16:05:45.5823|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:05:46.1171|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:05:46.1171|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:05:46.1414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.5032ms 200 
+2021-04-14 16:05:46.1874|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-04-14 16:05:46.2286|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.0894ms 500 text/html; charset=utf-8
+2021-04-14 16:06:14.4831|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:06:15.0979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:06:15.0979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:06:15.1256|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.6876ms 200 
+2021-04-14 16:06:15.2061|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:06:15.2951|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:06:15.3013|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.681ms.
+2021-04-14 16:06:15.3013|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:06:15.3551|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 142.8175ms
+2021-04-14 16:06:15.3623|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 267.1667ms 200 application/json; charset=utf-8
+2021-04-14 16:06:58.1886|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:06:58.6883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:06:58.6883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:06:58.7155|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.3097ms 200 
+2021-04-14 16:06:58.7993|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:06:58.8829|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:06:58.8829|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5499ms.
+2021-04-14 16:06:58.9021|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:06:58.9496|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 143.2211ms
+2021-04-14 16:06:58.9568|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 270.6325ms 200 application/json; charset=utf-8
+2021-04-14 16:07:04.8486|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/getAllPointsOfInterest  
+2021-04-14 16:07:04.8486|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.6372ms 404 text/plain
+2021-04-14 16:08:20.0328|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:08:20.6911|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:08:20.6911|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:08:20.7131|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.4638ms 200 
+2021-04-14 16:08:20.8034|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:08:20.8762|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:08:20.8762|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.417ms.
+2021-04-14 16:08:20.8762|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:08:20.9416|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 131.9159ms
+2021-04-14 16:08:20.9416|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.8869ms 200 application/json; charset=utf-8
+2021-04-14 16:08:27.4811|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/pointsofinterest  
+2021-04-14 16:08:27.4927|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.3456ms 404 text/plain
+2021-04-14 16:08:30.2837|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/pointsofinterest/getAllPointsOfInterest  
+2021-04-14 16:08:30.3018|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterests", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterests(Int32) on controller CityInfo.API.Controllers.PointsOfInterest (CityInfo.API).
+2021-04-14 16:08:30.3018|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API) - Validation state: Valid
+2021-04-14 16:08:30.3818|FATAL|CityInfo.API.Controllers.PointsOfInterest|An error occured when getting points of interest
+2021-04-14 16:08:30.3818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 68.9993ms.
+2021-04-14 16:08:30.3818|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2021-04-14 16:08:30.3909|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API) in 86.2142ms
+2021-04-14 16:08:30.3909|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.4017ms 500 text/plain; charset=utf-8
+2021-04-14 16:09:46.3810|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/PointsOfInterest/getAllPointsOfInterest  
+2021-04-14 16:09:46.4047|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPointsOfInterests", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPointsOfInterests(Int32) on controller CityInfo.API.Controllers.PointsOfInterest (CityInfo.API).
+2021-04-14 16:09:46.4135|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API) - Validation state: Valid
+2021-04-14 16:09:46.4511|FATAL|CityInfo.API.Controllers.PointsOfInterest|An error occured when getting points of interest
+2021-04-14 16:09:46.4541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 37.8587ms.
+2021-04-14 16:09:46.4541|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2021-04-14 16:09:46.4541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.PointsOfInterest.GetPointsOfInterests (CityInfo.API) in 52.5982ms
+2021-04-14 16:09:46.4541|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.1822ms 500 text/plain; charset=utf-8
+2021-04-14 16:12:06.3147|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:12:06.7201|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:12:06.7201|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:12:06.7541|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.7715ms 200 
+2021-04-14 16:12:06.8407|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:12:06.9195|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:12:06.9255|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.4605ms.
+2021-04-14 16:12:06.9255|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:12:06.9881|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 140.4912ms
+2021-04-14 16:12:06.9881|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 276.7297ms 200 application/json; charset=utf-8
+2021-04-14 16:12:12.9070|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/PointsOfInterest/getAllPointsOfInterest  
+2021-04-14 16:12:12.9070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllPointsOfInterests", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPointsOfInterests() on controller CityInfo.API.Controllers.PointsOfInterest (CityInfo.API).
+2021-04-14 16:12:12.9070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API) - Validation state: Valid
+2021-04-14 16:12:12.9070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.2494ms.
+2021-04-14 16:12:12.9273|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-04-14 16:12:12.9273|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API) in 13.7782ms
+2021-04-14 16:12:12.9273|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.7032ms 200 
+2021-04-14 16:13:11.8466|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:13:12.3942|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:13:12.3942|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:13:12.4163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.046ms 200 
+2021-04-14 16:13:12.4918|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:13:12.5643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:13:12.5643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.6374ms.
+2021-04-14 16:13:12.5810|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:13:12.6284|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 130.0967ms
+2021-04-14 16:13:12.6284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 245.1156ms 200 application/json; charset=utf-8
+2021-04-14 16:13:16.4561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/Api/PointsOfInterest/getAllPointsOfInterest  
+2021-04-14 16:13:16.4821|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllPointsOfInterests", controller = "PointsOfInterest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPointsOfInterests() on controller CityInfo.API.Controllers.PointsOfInterest (CityInfo.API).
+2021-04-14 16:13:16.4899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API) - Validation state: Valid
+2021-04-14 16:13:16.6968|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-04-14 16:13:18.2197|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c.PointsOfInterests].[Id], [c.PointsOfInterests].[CityId], [c.PointsOfInterests].[Description], [c.PointsOfInterests].[Name]
+FROM [City] AS [c]
+INNER JOIN [PointOfInterests] AS [c.PointsOfInterests] ON [c].[Id] = [c.PointsOfInterests].[CityId]
+2021-04-14 16:13:18.2547|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1760.8697ms.
+2021-04-14 16:13:18.2547|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Entities.PointOfInterest, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-04-14 16:13:18.2691|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.PointsOfInterest.GetAllPointsOfInterests (CityInfo.API) in 1783.1619ms
+2021-04-14 16:13:18.2691|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1820.1457ms 200 application/json; charset=utf-8
+2021-04-14 16:19:25.7617|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:19:26.5269|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:19:26.5269|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:19:26.5523|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.5207ms 200 
+2021-04-14 16:19:26.6193|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:19:26.7014|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:19:26.7079|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.517ms.
+2021-04-14 16:19:26.7188|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:19:26.7662|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 140.8699ms
+2021-04-14 16:19:26.7662|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 248.3184ms 200 application/json; charset=utf-8
+2021-04-14 16:19:32.1020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/getAllPointsOfInterest  
+2021-04-14 16:19:32.1095|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.5143ms 404 text/plain
+2021-04-14 16:19:54.6624|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-04-14 16:19:55.1263|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/  
+2021-04-14 16:19:55.1263|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50756/  0
+2021-04-14 16:19:55.1516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.5145ms 200 
+2021-04-14 16:19:55.2270|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "StartUp", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StartUp() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2021-04-14 16:19:55.2977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) - Validation state: Valid
+2021-04-14 16:19:55.2977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.5988ms.
+2021-04-14 16:19:55.2977|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-04-14 16:19:55.3586|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.CitiesController.StartUp (CityInfo.API) in 125.9821ms
+2021-04-14 16:19:55.3658|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 242.1531ms 200 application/json; charset=utf-8
+2021-04-14 16:20:02.0941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/pointsofinterest  
+2021-04-14 16:20:02.1025|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.7685ms 404 text/plain
+2021-04-14 16:20:04.9241|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/pointsofinterest/getAllPointsOfInterest  
+2021-04-14 16:20:04.9241|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.0411ms 404 text/plain
+2021-04-14 16:20:07.2979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50756/api/pointsofinterest/getAllPointsOfInterest  
+2021-04-14 16:20:07.2979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.3212ms 404 text/plain

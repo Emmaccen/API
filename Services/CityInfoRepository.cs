@@ -22,16 +22,23 @@ namespace CityInfo.API.Services
             return _cityInfoContext.City.OrderBy(c => c.Name).ToList();
         }
 
+        public IEnumerable<PointOfInterest> GetAllPointsOfInterests()
+        {
+            return _cityInfoContext.City.SelectMany(c => c.PointsOfInterests).ToList();
+        }
+
         public IEnumerable<PointOfInterest> GetPointOfInterestsForSingleCity(int cityId)
         {
             return _cityInfoContext.PointOfInterests.Where(p => p.City.Id == cityId).ToList();
         }
 
         public City GetSingleCity(int cityId, bool includePoi)
+        
         {
             return includePoi ? _cityInfoContext.City
+                .Where(c => c.Id == cityId)
                 .Include(p => p.PointsOfInterests)
-                .Where(c => c.Id == cityId).FirstOrDefault()
+                .FirstOrDefault()
                 :
                 _cityInfoContext.City.FirstOrDefault(c => c.Id == cityId);
         }

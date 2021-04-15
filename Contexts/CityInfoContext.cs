@@ -1,9 +1,5 @@
 ﻿using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CityInfo.API.Contexts
 {
@@ -14,7 +10,7 @@ namespace CityInfo.API.Contexts
         public DbSet<PointOfInterest> PointOfInterests { get; set; }
 
         public CityInfoContext(DbContextOptions<CityInfoContext> options)
-            :base(options)
+            : base(options)
         {
             //Database.EnsureCreated();
         }
@@ -32,8 +28,8 @@ namespace CityInfo.API.Contexts
                     Id = 2,
                     Name = "Bangalore",
                     Description = "A lone city"
-                }); 
-            
+                });
+
             modelBuilder.Entity<PointOfInterest>()
                 .HasData(
                  new PointOfInterest

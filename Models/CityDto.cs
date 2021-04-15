@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace CityInfo.API.Models
 {
@@ -17,7 +14,8 @@ namespace CityInfo.API.Models
                 return PointsOfInterests.Count;
             }
         }
-        public ICollection<PointsOfInterestsDto> PointsOfInterests { get; set; } = new List<PointsOfInterestsDto>();
+        public ICollection<PointsOfInterestsDto> PointsOfInterests { get; set; }
+            = new List<PointsOfInterestsDto>();
     }
 }
 

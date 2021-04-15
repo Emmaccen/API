@@ -1,10 +1,6 @@
-﻿using CityInfo.API.Models;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CityInfo.API.Entities
 {
@@ -18,7 +14,8 @@ namespace CityInfo.API.Entities
         public string Name { get; set; }
         [MaxLength(200)]
         public string Description { get; set; }
-        public ICollection<PointsOfInterestsDto> PointsOfInterests { get; set; }
-            = new List<PointsOfInterestsDto>();
+
+        public ICollection<PointOfInterest> PointsOfInterests { get; set; }
+            = new List<PointOfInterest>();
     }
 }
