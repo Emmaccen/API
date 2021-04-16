@@ -21,8 +21,14 @@ namespace CityInfo.API.Services
 
         bool CityExists(int cityId);
 
+        bool PoiExists(int cityId, int poiId);
+
         bool SaveChanges();
 
         void AddPoiForSingleCity(int cityId, PointOfInterest poi);
+
+        void DeleteSinglePoi(int cityId, int poiId, bool sendMailService);
+
+        void UpdatePoi(int cityId, PointOfInterest poiFromStore);
     }
 }

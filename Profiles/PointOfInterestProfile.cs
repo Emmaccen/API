@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace CityInfo.API.Profiles
 {
@@ -7,8 +8,12 @@ namespace CityInfo.API.Profiles
         public PointOfInterestProfile()
         {
             CreateMap<Entities.PointOfInterest, Models.PointsOfInterestsDto>();
-            CreateMap<Entities.PointOfInterest, Models.PointsOfInterestForUpdateDto>();
+
+            CreateMap<Models.PointsOfInterestForUpdateDto, Entities.PointOfInterest>()
+                .ReverseMap();
+
             CreateMap<Models.PointsOfInterestForCreation, Entities.PointOfInterest>();
+
         }
     }
 }

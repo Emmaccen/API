@@ -79,7 +79,7 @@ namespace CityInfo.API.Controllers
                 infoRepository.AddPoiForSingleCity(cityId, finalPoi);
                 var response = mapper.Map<PointsOfInterestsDto>(finalPoi);
                 return CreatedAtRoute("CreatedPointOfInterest",
-                new{ cityId, response.Id}, response);
+                new { cityId, response.Id }, response);
             }
             else
                 return NotFound();
@@ -88,18 +88,18 @@ namespace CityInfo.API.Controllers
         [HttpPut("{poiId}")]
         public IActionResult ReplacePointOfInterest(int poiId, int cityId, [FromBody] PointsOfInterestForUpdateDto poiUpdate)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-
-            if (city == null)
+            if (!infoRepository.PoiExists(cityId, poiId))
                 return NotFound();
 
-            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
+            var poiFromStore = cityInfoContext.PointOfInterests
+                .Where(c => c.CityId == cityId && c.Id == poiId)
+                .FirstOrDefault();
 
-            if (poiFromStore == null)
-                return NotFound();
+            var update = mapper.Map(poiUpdate, poiFromStore);
 
-            poiFromStore.Name = poiUpdate.Name;
-            poiFromStore.Description = poiUpdate.Description;
+            infoRepository.UpdatePoi(cityId, poiFromStore);
+
+            infoRepository.SaveChanges();
 
             return NoContent();
         }
@@ -108,28 +108,22 @@ namespace CityInfo.API.Controllers
         public IActionResult UpdatePointOfInterest(int poiId, int cityId,
             [FromBody] JsonPatchDocument<PointsOfInterestForUpdateDto> poiUpdate)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-            if (city == null)
+            if (!infoRepository.PoiExists(cityId, poiId))
                 return NotFound();
 
-            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
+            var poiFromStore = cityInfoContext.PointOfInterests
+                .Where(p => p.City.Id == cityId && p.Id == poiId)
+                .FirstOrDefault();
 
-            if (poiFromStore == null)
-                return NotFound();
-
-            var poiToPatch = new PointsOfInterestForUpdateDto
-            {
-                Name = poiFromStore.Name,
-                Description = poiFromStore.Description,
-            };
+            var poiToPatch = mapper.Map<PointsOfInterestForUpdateDto>(poiFromStore);
 
             poiUpdate.ApplyTo(poiToPatch, ModelState);
 
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            /* Now in a case where someone send a request like
+            /* Now in a case where someone sends a request like
              * [{
                 "op" : "remove",
                 "path": "/name",
@@ -144,8 +138,11 @@ namespace CityInfo.API.Controllers
             if (!TryValidateModel(poiToPatch))
                 return BadRequest();
 
-            poiFromStore.Name = poiToPatch.Name;
-            poiFromStore.Description = poiToPatch.Description;
+            mapper.Map(poiToPatch, poiFromStore);
+
+            infoRepository.UpdatePoi(cityId, poiFromStore);
+
+            infoRepository.SaveChanges();
 
             return NoContent();
         }
@@ -157,21 +154,14 @@ namespace CityInfo.API.Controllers
         [HttpDelete("{poiId}")]
         public IActionResult DeletePointOfInterest(int cityId, int poiId)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-            if (city == null)
+            if (!infoRepository.PoiExists(cityId, poiId))
                 return NotFound();
-
-            var poiFromStore = city.PointsOfInterests.FirstOrDefault(poi => poi.Id == poiId);
-
-            if (poiFromStore == null)
-                return NotFound();
-
-            city.PointsOfInterests.Remove(poiFromStore);
-            _mailService.ActivateMailService($"New point of interest deleted",
-                $"Point of interest with Name: {poiFromStore.Name} and ID: {poiFromStore.Id} has been deleted");
-
-            return NoContent();
+            else
+            {
+                infoRepository.DeleteSinglePoi(cityId, poiId, true);
+                return NoContent();
+            }
         }
     }
 }
