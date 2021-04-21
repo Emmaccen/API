@@ -1,40 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+using CourseLibrary.API.DbContexts;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using NLog.Web;
+using System;
 
-namespace CityInfo.API
+namespace CourseLibrary.API
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
-            var logger = NLogBuilder.ConfigureNLog("nlog.config")
-                .GetCurrentClassLogger();
-            try
+            var host = CreateHostBuilder(args).Build();
+
+            // migrate the database.  Best practice = in Main, using service scope
+            using (var scope = host.Services.CreateScope())
             {
-                CreateWebHostBuilder(args).Build().Run();
+                try
+                {
+                    var context = scope.ServiceProvider.GetService<CourseLibraryContext>();
+                    // for demo purposes, delete the database & migrate on startup so 
+                    // we can start with a clean slate
+                    context.Database.EnsureDeleted();
+                    context.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred while migrating the database.");
+                }
             }
-            catch (Exception ex)
-            {
-                logger.Error(ex, "An error occured");
-                throw;
-            }
-            finally
-            {
-                NLog.LogManager.Shutdown();
-            }
+
+            // run the web app
+            host.Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseNLog()
-                .UseStartup<Startup>();
+        
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

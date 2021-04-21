@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using CityInfo.API.Contexts;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Builder;
